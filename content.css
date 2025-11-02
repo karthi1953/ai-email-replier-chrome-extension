@@ -1,0 +1,19 @@
+#ai-reply-button {
+    background-color: #1a73e8 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    margin-right: 8px !important;
+}
+
+#ai-reply-button:hover:not(:disabled) {
+    background-color: #0d62c9 !important;
+}
+
+#ai-reply-button:disabled {
+    background-color: #cccccc !important;
+    cursor: not-allowed !important;
+}

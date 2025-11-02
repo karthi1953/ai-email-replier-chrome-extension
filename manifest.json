@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "AI Email Replier",
+  "version": "1.0",
+  "description": "Quick AI powered reply generator for Gmail.",
+
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "action": {
+    "default_title": "AI Email Replier",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+
+  "host_permissions": [
+    "https://email-replier-backend.onrender.com/*",
+    "https://mail.google.com/*"
+  ]
+}
