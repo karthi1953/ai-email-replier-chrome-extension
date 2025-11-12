@@ -1,4 +1,4 @@
-# 💌 AI Email Replier — Chrome Extension
+#  AI Email Replier — Chrome Extension
 
 **AI Email Replier** is a free Chrome Extension that helps you generate quick, intelligent email replies using AI — directly inside Gmail.  
 Built with **React (Vite)** for the frontend and **Spring Boot** for the backend.
